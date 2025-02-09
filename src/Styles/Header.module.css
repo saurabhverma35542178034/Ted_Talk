@@ -1,0 +1,151 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ted {
+    display: flex;
+    
+    
+}
+
+.ted h3, .ted h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .mainDiv {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.mainDiv > div {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.mainDiv h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #E62B1E;
+    margin: 0;
+}
+
+.mainDiv h5 {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin: 5px 0 20px 0;
+}
+
+.innerDiv {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.innerDiv a {
+    text-decoration: none;
+    color: #E62B1E;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.innerDiv a:hover {
+    border: 2px solid #E62B1E;
+    border-radius: 5px;
+    background-color: #fce6e5;
+}
+
+.innerDiv a.active {
+    border: 2px solid #E62B1E;
+    border-radius: 5px;
+   
+}
+
+nav {
+    /* background-color: #fff;background-color: #fff; */
+    padding: 10px 0;
+    width: 100%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #E62B1E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #c21e16;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    list-style-type: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mainDiv {
+        flex-direction: column;
+    }
+
+    .innerDiv {
+        justify-content: center;
+    }
+}
+
+
+

@@ -1,0 +1,5 @@
+2. Why do we use useRef here?
+We use useRef to access and manipulate the DOM directly in a React component. Normally, React handles UI updates for you, but sometimes you need to directly interact with the DOM (for example, scrolling).
+
+If you want to scroll an element (like a div) programmatically, you need a way to reference that element. This is where ref comes in.
+3. How scrolling works?
